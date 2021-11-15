@@ -47,11 +47,11 @@ visual
     width: 36.75%;
 }
 .vsl_area .txt_box {
-    padding-top: 5rem;
+    padding-top: 6rem;
 }
 .vsl_area .tit {
     margin: 0 auto;
-    width: 42.9%;
+    width: 51.45%;
 }
 
 @media (max-width: 991.98px) {
@@ -64,10 +64,10 @@ visual
 }
 @media (max-width: 575.98px) {
     .vsl_area .txt_box {
-        padding-top: 6.5rem;
+        padding-top: 7rem;
     }
     .vsl_area .tit {
-        width: 85%;
+        width: 100%;
     }
 }
 
@@ -215,6 +215,9 @@ result
     overflow: hidden;
     padding: 0;
 }
+.banner_area .grid {
+    padding: 4rem 0;
+}
 .banner_area .tit {
     font-size: 2rem;
 }
@@ -226,28 +229,28 @@ result
 .banner_area .btn {
     margin-top: 1.5rem;
 }
-.banner_area.top {
-    background-color: #fff2f1;
-}
-.banner_area.top .grid {
-    padding: 4rem 0;
-}
-.banner_area.top .banner_img {
+.banner_img {
     position: absolute;
     bottom: 0;
     right: 0;
     width: auto;
-    height: 95%;
+    height: 100%;
+}
+.banner_area.top {
+    background-color: #fff2f1;
+}
+.banner_area.top .banner_img {
+    right: -6%;
 }
 .banner_area.md {
     background-color: #ff6c00;
 }
 
 @media (max-width: 991.98px) {
-    .banner_area.top .grid {
+    .banner_area .grid {
         padding-bottom: 10rem;
     }
-    .banner_area.top .banner_img {
+    .banner_img {
         height: 70%;
     }
 }
@@ -277,11 +280,10 @@ result
     .type_bhv_list .flex_box_el {
         width: 100%;
     }
-    .banner_area.top .grid {
+    .banner_area .grid {
         padding: 3rem 0;
     }
-    .banner_area.top .banner_img {
-        right: -1rem;
-        height: 60%;
+    .banner_img {
+        display: none;
     }
 }

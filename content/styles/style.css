@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 /*==============================================
 
@@ -17,4 +17,4 @@
 
 @import "fonts.css";
 @import "reset.css";
-@import "layout.css";
+@import "layout.css?v=2";
