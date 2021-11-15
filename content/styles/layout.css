@@ -698,8 +698,16 @@ html.full {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 30rem;
     background-color: #fff;
+}
+.modal-hd {
+    padding: 1.5rem 0;
+    text-align: center;
+    background-color: #ff6980;
+}
+.modal-hd-tit {
+    font-size: 1.5rem;
+    color: #fff;
 }
 .modal_view {
     padding: 4rem 1.5rem;
@@ -719,14 +727,86 @@ html.full {
     width: 50%;
 }
 
-@media (max-width: 767.98px) {
-    .modal_wrap {
-        width: 85%;
+@media screen and (max-width: 768.98px) {
+    .close-modal {
+        right: 2rem;
+    }
+}
+
+@media screen and (max-width: 576.98px) {
+    .close-modal {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .modal-hd-tit {
+        line-height: 1.4;
+    }
+    .modal_btn {
+        padding: 1.5rem 1.25rem;
+    }
+}
+/* trend modal
+============================================================*/
+.tt-modal {
+    width: 44rem;
+    background-color: #f7f7f7;
+}
+.tt-modal .modal-view {
+    overflow-y: scroll;
+    padding: 2.5rem 4rem 4rem;
+    height: 30rem;
+}
+.tt-modal .modal-view::-webkit-scrollbar {
+    width: 5px;
+}
+.tt-modal .modal-view::-webkit-scrollbar-track {
+    background-color: #f7f7f7;
+}
+.tt-modal .modal-view::-webkit-scrollbar-thumb {
+    background: #000;
+}
+.tt-modal li {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #c6c6c6;
+}
+.tt-modal .txt-indent {
+    padding-left: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.35;
+}
+.tt-modal .txt-indent + .txt-indent {
+    margin-top: 0.5rem;
+}
+.tt-modal .txt-indent .mark {
+    top: -1px;
+}
+
+@media screen and (max-width: 768.98px) {
+    .tt-modal {
+        width: 80%;
+    }
+    .tt-modal .modal-view {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 576.98px) {
+    .tt-modal {
+        width: calc(100% - 40px);
+    }
+    .tt-modal .modal-view {
+        height: 35rem;
+    }
+    .tt-modal li {
+        padding: 1.5rem 0;
+    }
+    .tt-modal .txt-indent {
+        font-size: 1.25rem;
     }
 }
 
 /*============================================================
-header (joy0716 수정)
+header
 ============================================================*/
 header {
     position: absolute;
@@ -738,7 +818,7 @@ header {
 }
 .hd_ci {
     display: inline-block;
-    height: 3rem;
+    height: 2rem;
 }
 .hd_ci img {
     max-width: initial;
@@ -776,7 +856,7 @@ footer {
 
 @media (max-width: 575.98px) {
     footer.has_floatbnr {
-        margin-bottom: 5.85rem;
+        margin-bottom: 5.5rem;
     }
     .ft_info {
         display: block;
@@ -817,7 +897,7 @@ floating banner
 ============================================================*/
 .float_bnr_box {
     position: fixed;
-    top: 20.83%;
+    top: 22.85%;
     right: 6.25%;
 }
 .float_bnr {
@@ -842,55 +922,13 @@ floating banner
     color: #fff;
     line-height: 1.2;
 }
-.float_bnr .label * {
-    display: block;
-}
 .float_bnr .label .ico {
+    display: block;
     margin: 0 auto 0.5rem;
     width: 1.5rem;
 }
 .float_bnr .label small {
     padding-bottom:  5px;
-}
-.share_ico {
-    display: block;
-    position: absolute;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    width: 2rem;
-    height: 2rem;
-    border-radius: 100%;
-    -webkit-transition: transform .25s;
-    transition: transform .25s;
-}
-.share_list li:first-child .share_ico {
-    bottom: 0;
-    left: -1.9rem;
-}
-.share_list li:nth-child(2) .share_ico {
-    bottom: 2.5rem;
-    left: -2.5rem;
-}
-.share_list li:nth-child(3) .share_ico {
-    bottom: 5rem;
-    left: -1.9rem;
-}
-.share_list li:nth-child(4) .share_ico {
-    bottom: 6.8rem;
-    left: 0;
-}
-.share_list li:nth-child(5) .share_ico {
-    bottom: 7.5rem;
-    left: 2.5rem;
-}
-.share_list li:nth-child(6) .share_ico {
-    bottom: 6.75rem;
-    left: 5rem;
-}
-
-.on .share_ico {
-    -webkit-transform: scale(1);
-    transform: scale(1);
 }
 
 @media (max-width: 575.98px) {
@@ -906,12 +944,9 @@ floating banner
     }
     .float_bnr {
         margin: 0;
-        width: 50%;
-        height: 5.85rem;
+        width: 100%;
+        height: 5.5rem;
         border-radius: 0;
-    }
-    .float_bnr + .float_bnr {
-        border-left: 1px solid #fff;
     }
     .float_bnr .label {
         font-size: 1.25rem;
@@ -928,22 +963,5 @@ floating banner
     .float_bnr .label small {
         padding-bottom: 0;
         font-size: 0.8rem;
-    }
-    .share_list {
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        bottom: 7rem;
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 200%;
-    }
-    .share_ico {
-        position: relative;
-        bottom: auto !important;
-        left: auto !important;
-        right: auto !important;
-        width: 3.5rem;
-        height: 3.5rem;
     }
 }

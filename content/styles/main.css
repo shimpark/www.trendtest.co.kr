@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 
 .cont_area {
     padding: 3rem 0;
@@ -30,10 +30,10 @@ visual
 }
 .vsl_area .txt_box {
     position: relative;
-    padding-top: 11.5rem;
+    padding-top: 14rem;
 }
 .vsl_area .tit {
-    width: 54.27%;
+    width: 50.25%;
 }
 .vsl_area .txt {
     padding-top: 1.75rem;
@@ -108,12 +108,6 @@ visual
         right: 21.39%;
         width: 32%;
     }
-}
-/* floating banner
-============================================================*/
-.share_list li:last-child .share_ico {
-    bottom: 5rem;
-    left: 6.85rem;
 }
 
 /*============================================================
@@ -190,7 +184,7 @@ dashboard
 
 @media (max-width: 991.98px) {
     .db.row {
-        padding: 2rem 0;
+        padding: 2rem 1rem;
     }
 }
 @media (max-width: 575.98px) {
@@ -213,6 +207,7 @@ dashboard
         font-size: 1.25rem;
     }
     .db .ico {
+        margin-top: 1.5rem;
         width: 9rem;
     }
     .db_box.rt .tip,
@@ -221,197 +216,36 @@ dashboard
     }
     .db_box.rt .tip,
     .db_box.rt .btn {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
+    }
+    .db_box.rt .btn {
+        padding: 1rem 2rem;
     }
 }
 
 /*============================================================
-corp list
+type modal
 ============================================================*/
-.corp_list li {
-    position: relative;
-    width: 27.35%;
-}
-.corp_list .ico {
-    position: absolute;
-    top: 40%;
-    left: -3.5rem;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 1.8rem;
-}
-.corp_list .circ {
-    position: relative;
-    padding-bottom: 100%;
-    width: 100%;
-    height: 0;
-    background-color: #f2f2f2;
-    border-radius: 100%;
-}
-.corp_list .txt_box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-}
-.corp_list .txt {
-    position: relative;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    padding-top: 0.5rem;
-    width: 115%;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-.corp_list .btn_box {
-    padding-top: 1.75rem;
-    text-align: center;
-}
-.corp_list .btn {
-    margin: 0 0.75rem;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    border-bottom: 1px solid transparent;
-}
-.corp_list .btn:hover {
-    font-family: 'NEXON Gothic Bold';
-    border-color: #000;
-}
-
-@media (max-width: 991.98px) {
-    .corp_list .btn {
-        margin: 0 7px;
-    }
-}
-@media (max-width: 575.98px) {
-    .corp_list {
-        display: block;
-    }
-    .corp_list li {
-        margin: 0 auto;
-        width: 100%;
-    }
-    .corp_list li + li {
-        padding-top: 5rem;
-    }
-    .corp_list .ico {
-        top: 1.85rem;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        width: 1.8rem;
-    }
-    .corp_list .circ {
-        padding-bottom: 0;
-        margin: 0 auto;
-        width: 16rem;
-        height: 16rem;
-    }
-    .corp_list .txt {
-        width: 150%;
-        font-size: 1.2rem;
-    }
-    .corp_list .btn {
-        font-size: 1rem;
-    }
-}
-
-/* 팝업 */
-.type-modal {
-    padding: 2.5rem 4rem 5rem;
-    width: 44rem;
-    background-color: #f7f7f7;
-}
-
-.type-modal .modal-view {
-    overflow-y: scroll;
-    height: 24.5rem;
-}
-
-.type-modal .modal-view::-webkit-scrollbar {
-    width: 5px;
-}
-
-.type-modal .modal-view::-webkit-scrollbar-track {
-    background-color: #f7f7f7;
-}
-
-.type-modal .modal-view::-webkit-scrollbar-thumb {
-    background: #000;
-}
-
 .type-modal li {
     align-items: flex-start;
-    padding: 1.5rem 0;
-    border-bottom: 1px solid #c6c6c6;
 }
-
 .type-modal .thumb {
     width: 25%;
 }
-
 .type-modal .txt-box {
     width: 71%;
 }
 
-.type-modal .txt-indent {
-    padding-left: 0.5rem;
-    font-size: 0.9rem;
-    line-height: 1.35;
-}
-
-.type-modal .txt-indent + .txt-indent {
-    margin-top: 0.5rem;
-}
-
-.type-modal .txt-indent .mark {
-    top: -1px;
-}
-
-@media screen and (max-width: 768.98px) {
-    .close-modal {
-        right: 2rem;
-    }
-
-    .type-modal {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        padding-bottom: 3rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        margin: 0;
-        width: 80%;
-    }
-}
-
 @media screen and (max-width: 576.98px) {
-    .close-modal {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
     .type-modal li {
         flex-direction: column;
-        padding: 1.5rem 0;
     }
-
-    .type-modal .thumb,
+    .type-modal .thumb {
+        margin: 0 auto;
+        width: 14rem;
+    }
     .type-modal .txt-box {
+        padding-top: 2rem;
         width: 100%;
-    }
-
-    .type-modal .txt-box {
-        padding-top: 1rem;
-    }
-
-    .type-modal .txt-indent {
-        font-size: 1rem;
     }
 }
