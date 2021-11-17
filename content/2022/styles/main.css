@@ -107,17 +107,20 @@ visual
         left: 50%;
         width: 150%;
         max-width: 129%;
-        transform: translateX(-50%);
+        /* 1117 label 수정 */
+        transform: translateX(-50%) !important;
     }
     .vsl_img_2 {
-        top: 35%;
-        right: -11%;
-        width: 70%;
+        /* 1117 label 수정 */
+        top: 32%;
+        right: -15%;
+        width: 73%;
     }
     .vsl_img_3 {
-        top: 52%;
-        left: 7%;
-        width: 30%;
+        /* 1117 label 수정 */
+        top: 50%;
+        left: 5%;
+        width: 33%;
     }
 }
 

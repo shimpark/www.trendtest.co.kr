@@ -502,6 +502,11 @@ text style
     font-family: 'NEXON Gothic Bold', 'Nanum Gothic', 'Malgun Gothic', '돋움', 'dotum', 'AppleGothic', Helvetica, Arial, Sans-Serif !important;
     font-weight: 400 !important;
 }
+
+/* 1117 label 수정 추가 */
+.fn-nomal {
+    font-family: initial;
+}
 /* text align
 ============================================================*/
 .txt_lt {
